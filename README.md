@@ -4,7 +4,7 @@ Weather-App
 ## Description
 This is a a weather-app created using HTML5, CSS and vanila javascript to show the weather .
 
-![Alt text](/src/assets/images/home.png?raw=true "Home page")
+![Alt text](/home.png?raw=true "Home page")
 
 
 ## How to Use the weather-app
