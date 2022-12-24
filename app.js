@@ -112,3 +112,36 @@ slider.addEventListener("click", () => {
   toggleFarenheight();
 
 })
+
+// Add Darkmode
+
+let darkMode = localStorage.getItem('darkMode');
+const darkModeToggle = document.querySelector('.dark-mode-button');
+const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
+
+const enableDarkMode = () => {
+  body.classList.add('dark-mode');
+  localStorage.setItem('darkMode', 'enabled');
+  console.log(darkMode)
+}
+
+const disableDarkMode = () => {
+  body.classList.remove('dark-mode');
+  localStorage.setItem('darkMode', null)
+  console.log(darkMode)
+}
+
+if (darkMode == 'enabled') {
+  enableDarkMode();
+} else {
+  disableDarkMode();
+}
+
+darkModeToggle.addEventListener('click', () => {
+  darkMode = localStorage.getItem('darkMode');
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+})
