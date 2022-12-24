@@ -39,3 +39,28 @@ h1 {
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid white;
   }
+
+  .weatherInfo {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 1;
+  }
+  
+  .cardTop {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 1%;
+  }
+  
+  .cardLeft {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
